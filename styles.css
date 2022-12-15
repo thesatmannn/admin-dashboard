@@ -1,4 +1,38 @@
  .container {
     display: grid;
+    grid-template-columns: 1fr 3fr;
+    overflow: auto;
+    resize: both;
     
 }
+
+
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.projects {
+    display: grid;
+    
+
+
+    
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+.content h1 {
+    font-size: 1rem;
+}
+
+.right-side {
+    di
+}
+
+
