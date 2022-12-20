@@ -14,12 +14,28 @@
     grid-row: 1 / 4;
     background-color: rgb(76, 183, 255);
     color: white;
-    height: 100vh;
-    margin-top: 0px;
+    
+   
 }
+
+.dash {
+    width: 45px;
+}
+.icons {
+    width: 25px;
+    color: white;
+    
+}
+
 li {
     list-style: none;
+    
 }
+
+p{
+    color: dimgray;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -70,11 +86,11 @@ a {
 }
 
 
-.announcement-content {
+.announcements {
     background-color: white;
 }
 
-.trending-content {
+.trending {
     background-color: white;
 }
 
@@ -86,13 +102,15 @@ a {
     padding: 5px;
 }
 
-buttons {
-    display: grid;
+.buttons {
+    display: flex;
     grid-column: 2 / 3;
     grid-row: 2 / 5;
-    align-items: ;
-    align-self: baseline;
+    align-self: flex-end;
+    justify-content: space-around;
+   
     
+
 }
 
 button {
@@ -100,10 +118,9 @@ button {
     color: white;
     border: none;
     padding: 15px;
-    margin: 15px;
     width: 75px;
     font-weight: bold;
+    border-radius: 10%;
     
-
 }
 
