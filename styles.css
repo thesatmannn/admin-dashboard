@@ -96,10 +96,16 @@ a {
     color: white;
 
 }
-
+ h4 {
+    color: black;
+ }
 h3 {
-    font-size: 20px;
-    font-weight: none;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+h1 {
+    margin-bottom: 5px;
 }
 
 .header {
@@ -186,10 +192,15 @@ input {
     grid-column: 1 / 2;
     padding-left: 35px;
     margin-top: 5px;
+    padding-bottom: 10px;
 }
 
 .right-side {
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 35px;
+    padding: 5px;
 
 }
 
@@ -199,16 +210,16 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 30px;
     padding: 20px;
-    margin-top: 0px;
+    margin-top: 15px;
 
 }
 
 .project {
     display: grid;
+    grid-template-rows: 30px 2fr 1fr;
     background-color: white;
-    margin: 15Px;
     padding: 20px;
     align-content: center;
     border-radius: 10px;
@@ -222,7 +233,6 @@ input {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
-
 }
 
 .announcement-content {
@@ -232,8 +242,9 @@ input {
 }
 
 .trending {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: white;
-    align-content: center;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
@@ -241,18 +252,15 @@ input {
 }
 
 .trending-content {
+    display: flex;
+    flex-direction: column;
     margin: 15px;
+    align-items: center;
 
 }
-
 
 .content h1 {
     font-size: 1.1rem;
-    padding: 4px;
-}
-
-.right-side {
-    padding: 5px;
 }
 
 .buttons {
@@ -284,6 +292,9 @@ button:hover {
 }
 
 .icon-links {
+    margin-top: 20px;
+    grid-row: 3;
     display: flex;
+    align-content: center;
     justify-content: flex-end;
 }
