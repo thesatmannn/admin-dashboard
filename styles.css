@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
- 
+
 * {
     margin: 0px;
-    
+
 }
- .container {
+
+.container {
+    margin-left: 250px;
     display: grid;
-    grid-template-columns: 250px 3fr;
+    grid-template-columns: 3fr;
     overflow: auto;
     resize: both;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    
+   
+
 }
 
 .side-bar {
     grid-column: 1 / 2;
-    grid-row: 1 / 4;
     background-color: rgb(76, 183, 255);
     color: white;
     display: flex;
@@ -24,15 +26,18 @@
     font-size: 20px;
     font-weight: 450;
     height: 100vh;
-    
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+   
 }
 
 .dash img {
     width: 45px;
 }
 
-.dash  {
+.dash {
     align-items: center;
     display: flex;
     font-weight: 700;
@@ -46,6 +51,7 @@
     display: flex;
     align-content: center;
 }
+
 .icons {
     width: 25px;
     color: white;
@@ -58,7 +64,7 @@
 .black-icon {
     width: 25px;
 }
- 
+
 .nav-list {
     display: flex;
     flex-direction: column;
@@ -67,17 +73,18 @@
 }
 
 .nav-list a {
-display: flex;
-align-items: center;
-padding: 4px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
 
 }
+
 .nav-list li {
     list-style: none;
-   display: flex;
-   align-items: center;
-   padding: 6px;
-   font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    font-weight: 700;
 }
 
 p {
@@ -87,7 +94,7 @@ p {
 a {
     text-decoration: none;
     color: white;
-    
+
 }
 
 h3 {
@@ -100,7 +107,7 @@ h3 {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-left: 20px;
-    
+
 }
 
 .profile {
@@ -155,7 +162,7 @@ h3 {
 
 input {
     width: 85%;
-    background-color:rgb(236, 236, 236);
+    background-color: rgb(236, 236, 236);
     border: none;
     border-radius: 10px;
     height: 30px;
@@ -166,40 +173,61 @@ input {
     margin-left: none;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 15px 1fr 1fr 1fr;
     background-color: rgb(236, 236, 236);
     gap: 10px;
     margin-top: 30px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10),0 17px 50px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 100%;
-    
+    height: 100vh;
+}
+.your-projects {
+    grid-column: 1 / 2;
+    padding-left: 35px;
+    margin-top: 5px;
+}
+
+.right-side {
+    grid-column: 2 / 3;
+
 }
 
 .projects {
+    grid-column: 1 / 2;
+    grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin-top: 0px;
 
 }
 
 .project {
+    display: grid;
     background-color: white;
-    margin: 2px;
+    margin: 15Px;
     padding: 20px;
     align-content: center;
     border-radius: 10px;
     border-left: solid 8px orange;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10),0 17px 50px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
 }
 
 .announcements {
     background-color: white;
-    margin: 4px;
+    margin: 20px;
     border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10),0 17px 50px 0 rgba(0,0,0,0.10);
+    padding: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
+
+}
+
+.announcement-content {
+    padding: 20px;
+    margin: 20px;
 
 }
 
@@ -208,17 +236,19 @@ input {
     align-content: center;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.10),0 17px 50px 0 rgba(0,0,0,0.10);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.10), 0 17px 50px 0 rgba(0, 0, 0, 0.10);
+    margin: 15px;
 }
 
 .trending-content {
-    margin: 10px;
-    
+    margin: 15px;
+
 }
 
 
 .content h1 {
     font-size: 1.1rem;
+    padding: 4px;
 }
 
 .right-side {
@@ -243,3 +273,17 @@ button {
     margin: 15px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: rgb(39, 164, 247);
+}
+
+.gray-line {
+    border-top: solid rgb(236, 236, 236);
+    border-bottom: solid rgb(236, 236, 236);
+}
+
+.icon-links {
+    display: flex;
+    justify-content: flex-end;
+}
